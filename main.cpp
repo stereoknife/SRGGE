@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
     /* End additions */
 
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(VIEWPORT_INIT_WIDTH, VIEWPORT_INIT_HEIGHT, "SRGGE", NULL, NULL);
+	window = glfwCreateWindow(VIEWPORT_INIT_WIDTH * 2, VIEWPORT_INIT_HEIGHT * 2, "SRGGE", NULL, NULL);
 	if (window == NULL)
 	{
 		glfwTerminate();

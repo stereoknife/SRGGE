@@ -1,83 +1,117 @@
+//
+// Created by kam on 5/6/24.
+//
+
+#include <iostream>
 #include "UniformMeshGrid.h"
 
-void UniformMeshGrid::initialize(TriangleMesh& mesh, int res) {
-    // set resolution
-    resolution = res;
-
-    // init max & min values
-    max = glm::vec3(-9999999);
-    min = glm::vec3(9999999);
-
+UniformMeshGrid::UniformMeshGrid(TriangleMesh &mesh) : data{}, mesh{mesh} {
     // Get AABB max & min values
     for (auto v : mesh.vertices()) {
         max = glm::max(max, v);
         min = glm::min(min, v);
     }
+    //cout << "Mesh cube - min: " << min << " max: " << max << endl;
 
     // Extend to cube
     glm::vec3 diff = max - min;
-    float max_diff = glm::max(glm::max(diff.x, diff.y), diff.z);
-    max = min + max_diff;
+    side = glm::max(glm::max(diff.x, diff.y), diff.z);
+    max = min + side;
+}
 
-    // Calculate cell size
-    step = max_diff / (float)resolution;
+void UniformMeshGrid::initialize(int resolution) {
+    this->resolution = resolution;
+    step = side / (float)resolution;
+}
 
-    // Iterate thru input vertices
-    for (auto v : mesh.vertices()) {
-        // Compute which cell they're in
-        UMGCoords coords = get_coords(v);
+void UniformMeshGrid::simplify(int resolution, TriangleMesh& dest) {
+    initialize(resolution);
 
-        // Accumulate in cell (sum and count)
-        UMGCell& cell = grid[coords];
-        cell.count++;
+    // Iterate thru vertices
+    for (auto& v : mesh.vertices()) {
+        // Get grid coord for vertex
+        auto coords = get_coords(v);
+        // Add vertex position to cell
+        auto cell = data[coords];
         cell.position += v;
-        //grid[coords] = cell;
+        cell.count++;
+        data[coords] = cell;
     }
+
+    // Create output structs
+    int i_tri = 0;
 
     // Iterate thru grid cells
-    for (auto& c : grid) {
+    //cout << "Iterating grid cells" << endl;
+    for (auto& c : data) {
+        if (c.second.count == 0) continue;
+
         // Get average position
-        c.second.position /= c.second.count;
-        // Add to output vertices
-        output_verts.push_back(c.second.position);
+        c.second.position /= (float)c.second.count;
         // Store output vertex index
-        c.second.out_index = output_verts.size();
+        c.second.out_index = i_tri++;
+        dest.addVertex(c.second.position);
+
+        //cout << "Vert position: " << c.second.position.x << ", " << c.second.position.y << ", " << c.second.position.z << endl;
     }
 
-    // Iterate thru in triangles
-    for (int i = 0; i <= mesh.triangles().size(); i++) {
-        // Get cell coords
-        auto t0 = mesh.vertices()[i++];
-        auto t1 = mesh.vertices()[i++];
-        auto t2 = mesh.vertices()[i++];
+    auto tris = mesh.triangles();
+    auto verts = mesh.vertices();
 
-        auto co0 = get_coords(t0);
-        auto co1 = get_coords(t1);
-        auto co2 = get_coords(t2);
+    for (int i = 0; i < tris.size();) {
+        // Get cell coords
+        auto t0 = tris[i++];
+        auto t1 = tris[i++];
+        auto t2 = tris[i++];
+
+        auto v0 = verts[t0];
+        auto v1 = verts[t1];
+        auto v2 = verts[t2];
+
+        //cout << "co1" << endl;
+        auto co0 = get_coords(v0);
+        //cout << "co2" << endl;
+        auto co1 = get_coords(v1);
+        //cout << "co3" << endl;
+        auto co2 = get_coords(v2);
 
         // Check that it's not degenerate
+        //cout << "Check for degenerate triangle" << endl;
         if (co0 == co1 || co1 == co2 || co2 == co0) continue;
 
+        //cout << "Get new indices" << endl;
         // Get new triangle index
-        auto c0 = grid[co0];
-        auto c1 = grid[co1];
-        auto c2 = grid[co2];
+        auto c0 = data[co0];
+        auto c1 = data[co1];
+        auto c2 = data[co2];
 
+        //cout << "Output indices" << endl;
         // Output triangle index
-        output_tris.push_back(c0.out_index);
-        output_tris.push_back(c1.out_index);
-        output_tris.push_back(c2.out_index);
+        //cout << "Triangle indices: " << c0.out_index << ", " << c1.out_index << ", " << c2.out_index << endl;
+        dest.addTriangle(c0.out_index, c1.out_index, c2.out_index);
     }
 
-    save_simplification(mesh);
+    /*
+    for (auto& v : verts) {
+        dest.addVertex(v);
+    }
+
+    for (int i = 0; i < tris.size();) {
+        auto t0 = tris[i++];
+        auto t1 = tris[i++];
+        auto t2 = tris[i++];
+
+        dest.addTriangle(t0, t1, t2);
+    }
+     */
 }
 
-UMGCoords UniformMeshGrid::get_coords(glm::vec3 position) {
+bool Coords::operator==(const Coords &rhs) const {
+    return this->x == rhs.x && this->y == rhs.y && this->z == rhs.z;
+}
+
+Coords UniformMeshGrid::get_coords(glm::vec3 position) {
     glm::vec3 f_coords = glm::floor((position - min) / step);
     return {(int)f_coords.x, (int)f_coords.y, (int)f_coords.z};
-}
-
-void UniformMeshGrid::save_simplification(TriangleMesh& mesh) {
-    mesh.vertices() = output_verts;
-    mesh.triangles() = output_tris;
+    //return {position.x, position.y, position.z};
 }

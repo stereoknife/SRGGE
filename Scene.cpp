@@ -1,12 +1,13 @@
 //#include <iostream>
 #include <fstream>
+#include <iostream>
 #include "Scene.h"
+#include "UniformMeshGrid.h"
 
 
 Scene::Scene()
 {
 	cube = NULL;
-	mesh = NULL;
 }
 
 Scene::~Scene()
@@ -17,8 +18,6 @@ Scene::~Scene()
 		delete *it;
 	if(cube != NULL)
 		delete cube;
-	if(mesh != NULL)
-		delete mesh;
 }
 
 
@@ -36,34 +35,19 @@ void Scene::init()
 
 bool Scene::loadMesh(const char *filename)
 {
-	if(mesh != NULL)
-	{
-		mesh->free();
-		delete mesh;
-	}
-	mesh = new TriangleMesh();
-	bool bSuccess = mesh->loadFromFile(filename);
-	if(bSuccess)
-	{
-		TriangleMeshInstance *meshInstance;
+    const int resolutions[4] = {200, 150, 100, 50};
 
-		meshInstances.clear();
-		
-		meshInstance = new TriangleMeshInstance();
-		meshInstance->init(mesh, glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
-		meshInstance->translate(glm::vec3(-1.0f, 0.0f, 0.0f));
-		meshInstances.push_back(meshInstance);
-		
-		meshInstance = new TriangleMeshInstance();
-		meshInstance->init(mesh, glm::vec4(0.1f, 0.9f, 0.1f, 1.0f));
-		meshInstances.push_back(meshInstance);
-		
-		meshInstance = new TriangleMeshInstance();
-		meshInstance->init(mesh, glm::vec4(0.1f, 0.1f, 0.9f, 1.0f));
-		meshInstance->translate(glm::vec3(1.0f, 0.0f, 0.0f));
-		meshInstances.push_back(meshInstance);
-	}
-	
+	LODStack lod{};
+    bool bSuccess = lod.load(filename, resolutions);
+
+    if (bSuccess) {
+        lods.push_back(lod);
+        auto instance = new TriangleMeshInstance{};
+        instance->init(lod.get_mesh(0), glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
+        instance->translate(glm::vec3(-1.0f, 0.0f, 0.0f));
+        meshInstances.push_back(instance);
+    }
+
 	return bSuccess;
 }
 
@@ -79,8 +63,8 @@ void Scene::render()
 	camera.sendToOpenGL();
 	for(vector<TriangleMeshInstance *>::iterator it=roomCubes.begin(); it!=roomCubes.end(); it++)
 		(*it)->render();
-	for(vector<TriangleMeshInstance *>::iterator it=meshInstances.begin(); it!=meshInstances.end(); it++)
-		(*it)->render();
+    for(vector<TriangleMeshInstance *>::iterator it=meshInstances.begin(); it!=meshInstances.end(); it++)
+        (*it)->render();
 }
 
 VectorCamera &Scene::getCamera()

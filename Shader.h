@@ -4,7 +4,7 @@
 
 #include "GL/gl3w.h"
 #include <string>
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 
 
 using namespace std;

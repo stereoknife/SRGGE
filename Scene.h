@@ -6,6 +6,7 @@
 #include <vector>
 #include "VectorCamera.h"
 #include "TriangleMeshInstance.h"
+#include "LODStack.h"
 
 
 // Scene contains all the entities of our game.
@@ -32,8 +33,9 @@ private:
     bool buildRoomFromFile();
 
 private:
+    vector<LODStack> lods;
 	VectorCamera camera;
-	TriangleMesh *mesh, *cube;
+	TriangleMesh *cube;
 	vector<TriangleMeshInstance *> meshInstances;
 	vector<TriangleMeshInstance *> roomCubes;
 	float currentTime;

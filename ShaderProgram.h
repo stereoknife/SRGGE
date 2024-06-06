@@ -3,7 +3,7 @@
 
 
 #include "Shader.h"
-#include <OpenGL/gl.h>
+#include <GL/gl.h>
 #include <glm/glm.hpp>
 
 

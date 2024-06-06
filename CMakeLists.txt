@@ -8,7 +8,7 @@ project(SRGGE)
 set (CMAKE_CXX_STANDARD 11)
 
 if(NOT CMAKE_BUILD_TYPE)
-  set(CMAKE_BUILD_TYPE Release)
+  set(CMAKE_BUILD_TYPE Debug)
 endif()
 
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
@@ -37,7 +37,13 @@ set(gl3w_files gl3w/gl3w.c gl3w/GL/gl3w.h)
 add_definitions(-DMAC)
 
 add_executable(${appName} ${gl3w_files} PLYReader.h PLYReader.cpp TriangleMesh.h TriangleMesh.cpp TriangleMeshInstance.h TriangleMeshInstance.cpp VectorCamera.h VectorCamera.cpp Scene.h Scene.cpp Shader.h Shader.cpp ShaderProgram.h ShaderProgram.cpp Application.h Application.cpp main.cpp
-        )
+        UniformMeshGrid.cpp
+        UniformMeshGrid.h
+        LODStack.cpp
+        LODStack.h
+        LODInstance.cpp
+        LODInstance.h
+)
 
 target_link_libraries(${appName} ${OPENGL_LIBRARIES} glfw -ldl)
 

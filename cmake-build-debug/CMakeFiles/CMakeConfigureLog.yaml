@@ -1,0 +1,489 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.6.3-413.asahi.fc39.aarch64+16k - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.6.3-413.asahi.fc39.aarch64+16k - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sUbG3D"
+      binary: "/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sUbG3D"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sUbG3D'
+        
+        Run Build Command(s): /opt/clion-2023.3.4/bin/ninja/linux/aarch64/ninja -v cmTC_191ad
+        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -c /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/'
+         /usr/libexec/gcc/aarch64-redhat-linux/13/cc1 -quiet -v /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_191ad.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fdiagnostics-color=always -o /tmp/ccFwLbeQ.s
+        GNU C17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (aarch64-redhat-linux)
+        	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.2.1, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/../../../../aarch64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-redhat-linux/13/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 0b89bf309257b26c6eccacf3c05f55a1
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o /tmp/ccFwLbeQ.s
+        GNU assembler version 2.40 (aarch64-redhat-linux) using BFD version version 2.40-14.fc39
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.'
+        [2/2] : && /usr/bin/cc  -v  -rdynamic CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -o cmTC_191ad   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_191ad' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_191ad.'
+         /usr/libexec/gcc/aarch64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKY7ynF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_191ad /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/13 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../.. CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-redhat-linux/13/crtend.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_191ad' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_191ad.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-redhat-linux/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/13/include] ==> [/usr/lib/gcc/aarch64-redhat-linux/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-redhat-linux/13/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sUbG3D']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/clion-2023.3.4/bin/ninja/linux/aarch64/ninja -v cmTC_191ad]
+        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -c /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-redhat-linux/13/cc1 -quiet -v /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_191ad.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -version -fdiagnostics-color=always -o /tmp/ccFwLbeQ.s]
+        ignore line: [GNU C17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (aarch64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.2.1  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/../../../../aarch64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0b89bf309257b26c6eccacf3c05f55a1]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o /tmp/ccFwLbeQ.s]
+        ignore line: [GNU assembler version 2.40 (aarch64-redhat-linux) using BFD version version 2.40-14.fc39]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] : && /usr/bin/cc  -v  -rdynamic CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -o cmTC_191ad   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_191ad' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_191ad.']
+        link line: [ /usr/libexec/gcc/aarch64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKY7ynF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_191ad /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/13 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../.. CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-redhat-linux/13/crtend.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccKY7ynF.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_191ad] ==> ignore
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13/../../..] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../..]
+          arg [CMakeFiles/cmTC_191ad.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13] ==> [/usr/lib/gcc/aarch64-redhat-linux/13]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o;/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-redhat-linux/13;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fgAmYi"
+      binary: "/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fgAmYi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fgAmYi'
+        
+        Run Build Command(s): /opt/clion-2023.3.4/bin/ninja/linux/aarch64/ninja -v cmTC_d9ec2
+        [1/2] /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/'
+         /usr/libexec/gcc/aarch64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d9ec2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fdiagnostics-color=always -o /tmp/ccCdmWtQ.s
+        GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (aarch64-redhat-linux)
+        	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6), GMP version 6.2.1, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/../../../../aarch64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13
+         /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/aarch64-redhat-linux
+         /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/backward
+         /usr/lib/gcc/aarch64-redhat-linux/13/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: ee1c088d126cb18f7422d5db0ffac22d
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCdmWtQ.s
+        GNU assembler version 2.40 (aarch64-redhat-linux) using BFD version version 2.40-14.fc39
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/c++  -v  -rdynamic CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d9ec2   && :
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper
+        Target: aarch64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d9ec2' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d9ec2.'
+         /usr/libexec/gcc/aarch64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGj3gB9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_d9ec2 /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/13 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../.. CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/13/crtend.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d9ec2' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d9ec2.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/aarch64-redhat-linux]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/gcc/aarch64-redhat-linux/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/aarch64-redhat-linux] ==> [/usr/include/c++/13/aarch64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-redhat-linux/13/include] ==> [/usr/lib/gcc/aarch64-redhat-linux/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/c++/13/aarch64-redhat-linux;/usr/include/c++/13/backward;/usr/lib/gcc/aarch64-redhat-linux/13/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fgAmYi']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/clion-2023.3.4/bin/ninja/linux/aarch64/ninja -v cmTC_d9ec2]
+        ignore line: [[1/2] /usr/bin/c++   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/']
+        ignore line: [ /usr/libexec/gcc/aarch64-redhat-linux/13/cc1plus -quiet -v -D_GNU_SOURCE /opt/clion-2023.3.4/bin/cmake/linux/aarch64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d9ec2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mlittle-endian -mabi=lp64 -version -fdiagnostics-color=always -o /tmp/ccCdmWtQ.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.1 20231205 (Red Hat 13.2.1-6) (aarch64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 13.2.1 20231205 (Red Hat 13.2.1-6)  GMP version 6.2.1  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-redhat-linux/13/../../../../aarch64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/aarch64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-redhat-linux/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ee1c088d126cb18f7422d5db0ffac22d]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccCdmWtQ.s]
+        ignore line: [GNU assembler version 2.40 (aarch64-redhat-linux) using BFD version version 2.40-14.fc39]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/c++  -v  -rdynamic CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d9ec2   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper]
+        ignore line: [Target: aarch64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-13.2.1-20231205/obj-aarch64-redhat-linux/isl-install --enable-gnu-indirect-function --build=aarch64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20231205 (Red Hat 13.2.1-6) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/13/:/usr/libexec/gcc/aarch64-redhat-linux/:/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-redhat-linux/13/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-redhat-linux/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d9ec2' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_d9ec2.']
+        link line: [ /usr/libexec/gcc/aarch64-redhat-linux/13/collect2 -plugin /usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGj3gB9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_d9ec2 /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o /usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o -L/usr/lib/gcc/aarch64-redhat-linux/13 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/aarch64-redhat-linux/13/../../.. CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-redhat-linux/13/crtend.o /usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/aarch64-redhat-linux/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/aarch64-redhat-linux/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGj3gB9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d9ec2] ==> ignore
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/aarch64-redhat-linux/13/../../..] ==> dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../..]
+          arg [CMakeFiles/cmTC_d9ec2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o]
+          arg [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13] ==> [/usr/lib/gcc/aarch64-redhat-linux/13]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/aarch64-redhat-linux/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/aarch64-redhat-linux/13/crtbegin.o;/usr/lib/gcc/aarch64-redhat-linux/13/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-redhat-linux/13;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+...

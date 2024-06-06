@@ -1,0 +1,3 @@
+/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/SRGGE.dir
+/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kam/Documents/uni/SRGGE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
