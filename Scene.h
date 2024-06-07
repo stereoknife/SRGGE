@@ -33,6 +33,8 @@ private:
     bool buildRoomFromFile();
 
 private:
+    TriangleMesh* mesh;
+    TriangleMesh* meshes[4];
     vector<LODStack> lods;
 	VectorCamera camera;
 	TriangleMesh *cube;

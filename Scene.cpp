@@ -5,9 +5,9 @@
 #include "UniformMeshGrid.h"
 
 
-Scene::Scene()
+Scene::Scene() : meshes{ nullptr }
 {
-	cube = NULL;
+	cube = nullptr;
 }
 
 Scene::~Scene()
@@ -16,7 +16,7 @@ Scene::~Scene()
 		delete *it;
 	for(vector<TriangleMeshInstance *>::iterator it=meshInstances.begin(); it!=meshInstances.end(); it++)
 		delete *it;
-	if(cube != NULL)
+	if(cube != nullptr)
 		delete cube;
 }
 
@@ -37,16 +37,64 @@ bool Scene::loadMesh(const char *filename)
 {
     const int resolutions[4] = {200, 150, 100, 50};
 
-	LODStack lod{};
-    bool bSuccess = lod.load(filename, resolutions);
+    /*
+    TriangleMesh mesh{};
+    bool bSuccess = mesh.loadFromFile(filename);
 
     if (bSuccess) {
-        lods.push_back(lod);
-        auto instance = new TriangleMeshInstance{};
-        instance->init(lod.get_mesh(0), glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
+        auto umg = UniformMeshGrid(mesh);
+
+        for (int i = 0; i < 4; ++i) {
+            if (meshes[i] != nullptr) {
+                meshes[i]->free();
+                delete meshes[i];
+            }
+
+            auto dest = new TriangleMesh();
+            umg.simplify(resolutions[i], *dest);
+            //dest->sendToOpenGL();
+            meshes[i] = dest;
+        }
+
+        meshes[3]->sendToOpenGL();
+        auto instance = new TriangleMeshInstance {};
+        instance->init(meshes[3], glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
         instance->translate(glm::vec3(-1.0f, 0.0f, 0.0f));
         meshInstances.push_back(instance);
     }
+    */
+    if (mesh != nullptr) {
+        mesh->free();
+        delete mesh;
+    }
+
+    meshes[0] = new TriangleMesh{};
+    auto src = TriangleMesh{};
+    bool bSuccess = src.loadFromFile(filename);
+
+    if (bSuccess) {
+        auto umg = UniformMeshGrid(src);
+
+        for (int i = 0; i < 4; ++i) {
+            if (meshes[i] != nullptr) {
+                meshes[i]->free();
+                delete meshes[i];
+            }
+
+            auto dest = new TriangleMesh{};
+            umg.simplify(resolutions[i], *dest);
+            meshes[i] = dest;
+            meshes[i]->sendToOpenGL();
+        }
+
+        auto instance = new TriangleMeshInstance{};
+        instance->init(meshes[1], glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
+        instance->translate(glm::vec3(-1.0f, 0.0f, 0.0f));
+        meshInstances.push_back(instance);
+    }
+
+    //src->free();
+    //delete src;
 
 	return bSuccess;
 }
@@ -65,6 +113,9 @@ void Scene::render()
 		(*it)->render();
     for(vector<TriangleMeshInstance *>::iterator it=meshInstances.begin(); it!=meshInstances.end(); it++)
         (*it)->render();
+    for (auto lod : lods) {
+        lod.render();
+    }
 }
 
 VectorCamera &Scene::getCamera()

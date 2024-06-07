@@ -5,36 +5,23 @@
 #include "LODStack.h"
 #include "UniformMeshGrid.h"
 
-LODStack::LODStack() = default;
+LODStack::LODStack(TriangleMesh* stack) : instance{} {
+    this->stack = stack;
+}
 
-bool LODStack::load(const char *filename, const int resolutions[]) {
-    auto mesh = std::make_shared<TriangleMesh>();
-    bool bSuccess = mesh->loadFromFile(filename);
+void LODStack::set_position(glm::vec3 position) {
+    this->position = position;
+}
 
-    if (bSuccess) {
-        stack.push_back(mesh);
-        auto umg = UniformMeshGrid(*mesh);
-
-        for (int i = 0; i < 4; ++i) {
-            auto dest = std::make_shared<TriangleMesh>();
-            umg.simplify(resolutions[i], *dest);
-            stack.push_back(dest);
-        }
-
-        for (auto &m : stack) {
-            m->sendToOpenGL();
-        }
-    }
-
-    return bSuccess;
+void LODStack::set_colour(glm::vec4 colour) {
+    this->colour = colour;
 }
 
 void LODStack::set_level(int level) {
-    auto mesh = &stack[level];
-    instance.init(mesh, glm::vec4(0.9f, 0.1f, 0.1f, 1.0f));
-    instance.translate(glm::vec3(-1.0f, 0.0f, 0.0f));
+    instance.init(&stack[level], colour);
+    instance.translate(position);
 }
 
-weak_ptr<TriangleMesh> LODStack::get_mesh(int level) {
-    return stack[level];
+void LODStack::render() {
+    instance.render();
 }

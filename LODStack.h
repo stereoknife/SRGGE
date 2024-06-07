@@ -8,17 +8,19 @@
 
 #include "TriangleMesh.h"
 #include "TriangleMeshInstance.h"
-#include <memory>
 
 class LODStack {
-    vector<shared_ptr<TriangleMesh>> stack;
+    TriangleMesh* stack;
+    TriangleMeshInstance instance;
+    glm::vec3 position;
+    glm::vec4 colour;
 
 public:
-    LODStack();
-    bool load(const char *filename, const int resolutions[]);
-
-
-    weak_ptr<TriangleMesh> get_mesh(int level);
+    LODStack(TriangleMesh* stack);
+    void set_position(glm::vec3 position);
+    void set_colour(glm::vec4 colour);
+    void set_level(int level);
+    void render();
 };
 
 

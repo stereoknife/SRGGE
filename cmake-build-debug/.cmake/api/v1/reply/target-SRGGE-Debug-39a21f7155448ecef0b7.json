@@ -33,7 +33,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 48,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -135,8 +135,7 @@
 				17,
 				18,
 				19,
-				21,
-				23
+				21
 			]
 		}
 	],
@@ -202,8 +201,7 @@
 				17,
 				18,
 				19,
-				21,
-				23
+				21
 			]
 		},
 		{
@@ -220,8 +218,7 @@
 				14,
 				16,
 				20,
-				22,
-				24
+				22
 			]
 		}
 	],
@@ -352,17 +349,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "LODStack.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "LODInstance.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "LODInstance.h",
 			"sourceGroupIndex" : 1
 		}
 	],

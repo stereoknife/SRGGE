@@ -145,14 +145,6 @@ build CMakeFiles/SRGGE.dir/LODStack.cpp.o: CXX_COMPILER__SRGGE_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/SRGGE.dir
   OBJECT_FILE_DIR = CMakeFiles/SRGGE.dir
 
-build CMakeFiles/SRGGE.dir/LODInstance.cpp.o: CXX_COMPILER__SRGGE_unscanned_Debug /home/kam/Documents/uni/SRGGE/LODInstance.cpp || cmake_object_order_depends_target_SRGGE
-  DEFINES = -DMAC
-  DEP_FILE = CMakeFiles/SRGGE.dir/LODInstance.cpp.o.d
-  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
-  INCLUDES = -I/home/kam/Documents/uni/SRGGE/khr -I/home/kam/Documents/uni/SRGGE/gl3w
-  OBJECT_DIR = CMakeFiles/SRGGE.dir
-  OBJECT_FILE_DIR = CMakeFiles/SRGGE.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SRGGE
@@ -161,7 +153,7 @@ build CMakeFiles/SRGGE.dir/LODInstance.cpp.o: CXX_COMPILER__SRGGE_unscanned_Debu
 #############################################
 # Link the executable SRGGE
 
-build SRGGE: CXX_EXECUTABLE_LINKER__SRGGE_Debug CMakeFiles/SRGGE.dir/gl3w/gl3w.c.o CMakeFiles/SRGGE.dir/PLYReader.cpp.o CMakeFiles/SRGGE.dir/TriangleMesh.cpp.o CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.o CMakeFiles/SRGGE.dir/VectorCamera.cpp.o CMakeFiles/SRGGE.dir/Scene.cpp.o CMakeFiles/SRGGE.dir/Shader.cpp.o CMakeFiles/SRGGE.dir/ShaderProgram.cpp.o CMakeFiles/SRGGE.dir/Application.cpp.o CMakeFiles/SRGGE.dir/main.cpp.o CMakeFiles/SRGGE.dir/UniformMeshGrid.cpp.o CMakeFiles/SRGGE.dir/LODStack.cpp.o CMakeFiles/SRGGE.dir/LODInstance.cpp.o | /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/libGLU.so /usr/lib64/libglfw.so.3.3
+build SRGGE: CXX_EXECUTABLE_LINKER__SRGGE_Debug CMakeFiles/SRGGE.dir/gl3w/gl3w.c.o CMakeFiles/SRGGE.dir/PLYReader.cpp.o CMakeFiles/SRGGE.dir/TriangleMesh.cpp.o CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.o CMakeFiles/SRGGE.dir/VectorCamera.cpp.o CMakeFiles/SRGGE.dir/Scene.cpp.o CMakeFiles/SRGGE.dir/Shader.cpp.o CMakeFiles/SRGGE.dir/ShaderProgram.cpp.o CMakeFiles/SRGGE.dir/Application.cpp.o CMakeFiles/SRGGE.dir/main.cpp.o CMakeFiles/SRGGE.dir/UniformMeshGrid.cpp.o CMakeFiles/SRGGE.dir/LODStack.cpp.o | /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/libGLU.so /usr/lib64/libglfw.so.3.3
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = -lOpenGL  -lGLX  -lGLU  /usr/lib64/libglfw.so.3.3  -ldl

@@ -41,8 +41,6 @@ add_executable(${appName} ${gl3w_files} PLYReader.h PLYReader.cpp TriangleMesh.h
         UniformMeshGrid.h
         LODStack.cpp
         LODStack.h
-        LODInstance.cpp
-        LODInstance.h
 )
 
 target_link_libraries(${appName} ${OPENGL_LIBRARIES} glfw -ldl)
